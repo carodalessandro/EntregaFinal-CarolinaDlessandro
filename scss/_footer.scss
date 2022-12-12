@@ -1,7 +1,9 @@
+@import "variables";
+
 footer{ 
     margin: auto;
     padding: 0rem 0rem 0rem 0rem;
-    background-color: black; 
+    background-color: $colorBlack; 
     position: relative;
     bottom: 0rem;
     top: 0rem;

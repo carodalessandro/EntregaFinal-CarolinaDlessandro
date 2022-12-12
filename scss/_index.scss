@@ -1,12 +1,13 @@
+@import "variables";
 
 @mixin tortasIndexStyle{
     display: flex;
     height: 18rem;
     width: 12rem;  
     background: white; 
-    color: black; 
+    color: $colorBlack; 
     padding: auto; 
-    border-style: groove; 
+    border-style: $bordeBoton; 
     border-color: white;
 }
 .tortaIndexLeft{
@@ -29,10 +30,10 @@
 
 .backgroundsIndex2{
     background-color: white;
-    color: black; 
-    width: 50%; 
+    color: $colorBlack; 
+    width:75%; 
     padding: 0.2rem 0.2rem 0.2rem 0.2rem; 
-    border-style: groove; 
+    border-style: $bordeBoton; 
     border-radius: 1rem;
     border-color: grey;
     margin: 3rem 0rem 3rem 0rem; 
@@ -86,14 +87,17 @@
 @media(min-width:1024px){
 
     .tortaIndexLeft{
-            margin: 30rem 55rem 0rem 0rem;
+            margin: 10rem 75rem 0rem 0rem;
             position: absolute; 
             top: 0px; 
           
     }
+    .backgroundsIndex2{
+        width: 50%;
+    }
 
     .tortaIndexRight{
-            margin: 30rem 0rem 50rem 55rem;
+            margin: 10rem 0rem 50rem 75rem;
             position: absolute; 
             top: 0px; 
          

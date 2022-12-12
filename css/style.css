@@ -11,6 +11,10 @@ header {
   width: 100%;
 }
 
+.flex {
+  display: flex;
+}
+
 .logoEmpresa {
   width: 10rem;
   top: 0px;
@@ -18,28 +22,20 @@ header {
   grid-area: "logoEmpresa";
 }
 
-.nav_link__titulos {
+.nav_link {
   display: grid;
-  color: white;
-  font-weight: 300;
   text-transform: uppercase;
   text-decoration: solid;
 }
 
-.nav_link__principal {
-  display: grid;
-  color: fuchsia;
+.active {
+  color: fuchsia !important;
   font-weight: 350;
-  text-transform: uppercase;
-  text-decoration: solid;
   transition: height 2s;
   transition: width 1s;
 }
 
 @media (min-width: 768px) {
-  #collapse, #collapsed {
-    display: none;
-  }
   .nav {
     display: grid;
     flex-direction: row;
@@ -51,29 +47,25 @@ header {
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
     top: 0rem;
-    align-items: flex-end;
     justify-items: flex-end;
+    align-items: flex-start;
+    justify-content: space-between;
   }
-  .nav_link__titulos {
+  .nav_link {
     display: flex;
     flex-wrap: wrap;
     margin-left: 2rem;
     margin-right: 2rem;
+  }
+  .nav_link {
     margin-top: 0.5rem;
     text-transform: uppercase;
     text-decoration: none;
     text-align: justify;
   }
-  .nav_link__titulos :hover {
+  .nav_link :hover {
     height: 2rem;
     font-size: 1.5rem;
-  }
-  .nav_link__principal {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: 2rem;
-    margin-right: 2rem;
-    margin-top: 1rem;
   }
 }
 @media (min-width: 1024px) {
@@ -81,19 +73,7 @@ header {
     align-items: flex-end;
     justify-content: space-around;
   }
-  .nav .ul {
-    flex-wrap: nowrap;
-    justify-content: space-around;
-  }
-  .nav_link__titulos {
-    flex-wrap: nowrap;
-    font-size: 1.2rem;
-    margin-left: 2rem;
-    margin-right: 1rem;
-    margin-top: 1.5rem;
-    margin-bottom: 1rem;
-  }
-  .nav_link__principal {
+  .nav_link {
     flex-wrap: nowrap;
     font-size: 1.2rem;
     margin-left: 2rem;
@@ -223,7 +203,7 @@ footer {
 .backgroundsIndex2 {
   background-color: white;
   color: black;
-  width: 50%;
+  width: 75%;
   padding: 0.2rem 0.2rem 0.2rem 0.2rem;
   border-style: groove;
   border-radius: 1rem;
@@ -271,12 +251,15 @@ footer {
 }
 @media (min-width: 1024px) {
   .tortaIndexLeft {
-    margin: 30rem 55rem 0rem 0rem;
+    margin: 10rem 75rem 0rem 0rem;
     position: absolute;
     top: 0px;
   }
+  .backgroundsIndex2 {
+    width: 50%;
+  }
   .tortaIndexRight {
-    margin: 30rem 0rem 50rem 55rem;
+    margin: 10rem 0rem 50rem 75rem;
     position: absolute;
     top: 0px;
   }
@@ -322,35 +305,30 @@ footer {
   border-radius: 1rem;
 }
 
-.backgrounds {
-  background-color: white;
-  color: black;
+.backgroundsStyle, .backgroundstorta, .backgrounds {
   width: 100%;
-  height: 5rem;
   border-style: groove;
+  color: black;
   border-radius: 1rem;
   margin-bottom: 2rem;
-  text-transform: uppercase;
-  font-size: 1.5rem;
-  font-family: "Caveat";
-  font-weight: bold;
   text-align: center;
   position: relative;
   animation-name: text;
 }
 
+.backgrounds {
+  background-color: white;
+  height: 5rem;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-family: "Caveat";
+  font-weight: bold;
+}
+
 .backgroundstorta {
   background-color: none;
-  color: black;
-  width: 100%;
-  height: 14rem;
-  border-style: groove;
-  border-radius: 1rem;
-  margin-bottom: 2rem;
-  font-size: 1.7rem;
-  text-align: center;
-  position: relative;
-  animation-name: text;
+  height: 10rem;
+  font-size: 1.4rem;
 }
 
 @media (min-width: 768px) {
@@ -360,7 +338,7 @@ footer {
 }
 @media (min-width: 1024px) {
   .tamañocarrousel {
-    width: 30%;
+    width: 50%;
   }
 }
 fieldset {
@@ -413,7 +391,7 @@ fieldset textarea {
   left: 0;
   height: 0%;
   width: 190%;
-  background-color: rgb(231, 126, 231);
+  background-color: rgb(156, 86, 156);
   z-index: -1;
   transition: all 0.7s;
 }
@@ -450,9 +428,7 @@ fieldset textarea {
 }
 
 .backgroundsOptions {
-  background-color: none;
   color: black;
-  width: 50%;
   padding: 0.2rem 0.2rem 0.2rem 0.2rem;
   border-style: groove;
   border-radius: 1rem;
@@ -460,10 +436,12 @@ fieldset textarea {
   margin: 3rem 0rem 3rem 0rem;
   font-size: 2rem;
   font-family: "Caveat";
-  justify-content: space-around;
-  align-items: center;
   text-align: center;
   font-weight: 900;
+  background-color: none;
+  width: 50%;
+  justify-content: space-around;
+  align-items: center;
   z-index: 0;
 }
 .backgroundsOptions .backgroundsBox {
@@ -474,9 +452,7 @@ fieldset textarea {
 }
 
 .backgroundsText {
-  background-color: white;
   color: black;
-  width: 100%;
   padding: 0.2rem 0.2rem 0.2rem 0.2rem;
   border-style: groove;
   border-radius: 1rem;
@@ -486,6 +462,8 @@ fieldset textarea {
   font-family: "Caveat";
   text-align: center;
   font-weight: 900;
+  background-color: white;
+  width: 100%;
 }
 
 .tamañoImagenes--tortas {
@@ -559,17 +537,7 @@ body section {
   justify-content: center;
   align-items: center;
 }
-body section h1 {
-  font-family: "Caveat";
-  margin: 1rem 1rem 1rem 1rem;
-  text-align: center;
-  font-weight: bold;
-  font-size: 2rem;
-  opacity: none;
-  animation: fadeIn;
-  animation-duration: 2s;
-}
-body section h2 {
+body section h1, body section h2 {
   font-family: "Caveat";
   margin: 1rem 1rem 1rem 1rem;
   text-align: center;
