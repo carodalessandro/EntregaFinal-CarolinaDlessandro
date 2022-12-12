@@ -1,9 +1,11 @@
 
+@import "variables";
+
 fieldset {
     background-color: none;
     background-position: center;
     background-repeat: repeat-y; 
-    border-color: rgb(156, 86, 156);
+    border-color: $hoverBoton;
     padding: 2rem 0rem 2rem 0rem; 
     text-transform: uppercase; 
     font-size: 1.3rem;
@@ -19,7 +21,7 @@ fieldset {
         font-family: "Montserrat";
         font-size:large;
         border-radius: 2rem;
-        border-color: fuchsia;
+        border-color: $colorFuchsia;
         opacity: 0.5;
     }
 
@@ -37,8 +39,8 @@ fieldset {
     font-size: 1.5rem;
     border-bottom-style: inset; 
     padding: 3px 3px 3px 3px;
-    border-color: fuchsia;
-    color: black;
+    border-color: $colorFuchsia;
+    color: $colorBlack;
     margin-bottom: 3px;
     border-radius: 2rem;
     z-index: 1;
@@ -52,7 +54,7 @@ fieldset {
         left: 0;
         height: 0%;
         width: 190%;
-        background-color: rgb(231, 126, 231);
+        background-color: $hoverBoton;
         z-index: -1;
         transition: all 0.7s;
     }
