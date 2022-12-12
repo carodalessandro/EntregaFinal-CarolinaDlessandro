@@ -1,7 +1,7 @@
 header{ 
     margin: auto;
     padding: auto;
-    background-color: black; 
+    background-color: $colorBlack; 
     position: sticky; 
     display: flex;
     top: 0px; 
@@ -27,15 +27,9 @@ header{
     text-decoration: solid;
 }
 
-.nav_link__titulos{
-    @extend.nav_link;
-    color:white;
-    font-weight: 300;
-}
 
-.nav_link__principal{
-    @extend.nav_link;
-    color:fuchsia;
+.active{
+    color:$colorFuchsia !important;
     font-weight: 350;
     transition: height 2s;
     transition: width 1s;
@@ -44,10 +38,7 @@ header{
 
 @media(min-width:768px){
 
-    &p-4{
-        display: flex;
-        flex-direction: row;
-    }
+ 
 
     .nav{
         display: grid;
@@ -72,8 +63,7 @@ header{
         margin-right: 2rem;
     }
 
-    .nav_link__titulos{
-            @extend.nav_link;
+    .nav_link{
             margin-top: 0.5rem;
             text-transform:uppercase;
             text-decoration: none;
@@ -82,11 +72,6 @@ header{
                 height: 2rem;
                 font-size: 1.5rem;
             }            
-    }
-
-    .nav_link__principal{
-            @extend.nav_link;
-            margin-top: 1rem;            
     }
 }
 
@@ -104,13 +89,5 @@ header{
         margin-right: 1rem;
         margin-top: 1.5rem; 
         margin-bottom: 1rem;
-    }
-
-    .nav_link__titulos{
-        @extend.nav_link;  
-    }
-
-    .nav_link__principal{
-        @extend.nav_link ; 
     }
 }
