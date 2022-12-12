@@ -1,0 +1,87 @@
+
+fieldset {
+    background-color: none;
+    background-position: center;
+    background-repeat: repeat-y; 
+    border-color: rgb(156, 86, 156);
+    padding: 2rem 0rem 2rem 0rem; 
+    text-transform: uppercase; 
+    font-size: 1.3rem;
+    font-family:"Caveat" ;
+    text-align: center; 
+    line-height: 1.9rem;
+    align-items: center;
+    border-radius: 1rem;
+    display: grid;
+    flex-wrap: wrap;
+
+    input{
+        font-family: "Montserrat";
+        font-size:large;
+        border-radius: 2rem;
+        border-color: fuchsia;
+        opacity: 0.5;
+    }
+
+    
+    textarea{
+        padding: 4rem 4rem 4rem 4rem;
+        opacity: 0.5;
+        text-emphasis-color: black;
+    }
+}
+
+.btn{
+    position: relative;
+    font-family:"Caveat";
+    font-size: 1.5rem;
+    border-bottom-style: inset; 
+    padding: 3px 3px 3px 3px;
+    border-color: fuchsia;
+    color: black;
+    margin-bottom: 3px;
+    border-radius: 2rem;
+    z-index: 1;
+    overflow: hidden;
+    transition: all 0.7s;
+
+    &:before{
+        content: " ";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 0%;
+        width: 190%;
+        background-color: rgb(231, 126, 231);
+        z-index: -1;
+        transition: all 0.7s;
+    }
+    &:hover:before{
+        height: 190%;
+    }
+
+    &:hover{
+        color: none;
+    }
+}
+
+
+.fontFrases{
+    width:auto ;
+    font-family: "Caveat"; 
+    text-align: center; 
+    font-size: 1.5rem; 
+    margin: 0rem 1rem 1rem 1rem ;
+    font-weight: 900;
+}
+
+@media(min-width:1024px){
+
+    .btn{
+            font-size: 1.7rem;
+            padding: 0.6rem 0.6rem 0.6rem 0.6rem;
+            margin-top: 1rem;
+            border-radius: 2rem;
+    }
+
+}

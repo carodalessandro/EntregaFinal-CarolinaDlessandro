@@ -1,0 +1,73 @@
+.ordenImagenes{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0rem 1rem 0rem 1rem;
+}
+
+@mixin backgroundsFont{
+    color: black; 
+    padding: 0.2rem 0.2rem 0.2rem 0.2rem; 
+    border-style: groove; 
+    border-radius: 1rem;
+    border-color: grey;
+    margin: 3rem 0rem 3rem 0rem; 
+    font-size: 2rem; 
+    font-family:"Caveat";
+    text-align: center;
+    font-weight: 900;
+}
+
+.backgroundsOptions{
+    @include backgroundsFont;
+    background-color: none;
+    width: 50%; 
+    justify-content: space-around;
+    align-items: center;
+    z-index: 0;
+       
+        .backgroundsBox{
+            padding: 0.2rem 0.2rem 0.2rem 0.2rem; 
+            border-style: groove; 
+            border-radius: 1rem;
+            align-items: center;
+    }
+}
+
+.backgroundsText{
+    @include backgroundsFont;
+    background-color: white;
+    width: 100%;   
+}
+
+.tamañoImagenes--tortas{
+    display: flex;
+    margin-bottom: 2rem;
+    width: 25rem ;
+    height: 25rem;
+    background-color: none; 
+    background-position: center;
+    background-repeat: no-repeat;
+    color: black; 
+    padding: 2rem 2rem 2rem 2rem; 
+    border-style: groove; 
+    border-color: white;
+    border-radius: 1rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+@media(min-width:1024px){
+    .backgroundsOptions{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        .backgroundsBox{
+            width: 50%;
+        }
+    }
+
+}

@@ -1,0 +1,116 @@
+header{ 
+    margin: auto;
+    padding: auto;
+    background-color: black; 
+    position: sticky; 
+    display: flex;
+    top: 0px; 
+    flex-direction: row;
+    z-index: 1;
+    width: 100%;
+}
+
+.flex{
+    display: flex;
+}
+
+.logoEmpresa{
+    width: 10rem;
+    top: 0px;
+    display: grid;
+    grid-area: "logoEmpresa";
+}
+
+.nav_link{
+    display: grid;
+    text-transform: uppercase;
+    text-decoration: solid;
+}
+
+.nav_link__titulos{
+    @extend.nav_link;
+    color:white;
+    font-weight: 300;
+}
+
+.nav_link__principal{
+    @extend.nav_link;
+    color:fuchsia;
+    font-weight: 350;
+    transition: height 2s;
+    transition: width 1s;
+}
+
+
+@media(min-width:768px){
+
+    &p-4{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .nav{
+        display: grid;
+        flex-direction: row;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "logoEmpresa list";
+        list-style: none;
+        padding: 0px 0;
+        width: 100%;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        top: 0rem;
+        justify-items: flex-end;
+        align-items: flex-start;
+        justify-content: space-between; 
+    }
+
+    .nav_link{
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    .nav_link__titulos{
+            @extend.nav_link;
+            margin-top: 0.5rem;
+            text-transform:uppercase;
+            text-decoration: none;
+            text-align: justify;
+            :hover{
+                height: 2rem;
+                font-size: 1.5rem;
+            }            
+    }
+
+    .nav_link__principal{
+            @extend.nav_link;
+            margin-top: 1rem;            
+    }
+}
+
+@media(min-width:1024px){
+
+    .nav{
+            align-items: flex-end;
+            justify-content: space-around;
+    }
+
+    .nav_link{
+        flex-wrap: nowrap;
+        font-size: 1.2rem;
+        margin-left: 2rem;
+        margin-right: 1rem;
+        margin-top: 1.5rem; 
+        margin-bottom: 1rem;
+    }
+
+    .nav_link__titulos{
+        @extend.nav_link;  
+    }
+
+    .nav_link__principal{
+        @extend.nav_link ; 
+    }
+}

@@ -1,0 +1,112 @@
+
+@mixin tortasIndexStyle{
+    display: flex;
+    height: 18rem;
+    width: 12rem;  
+    background: white; 
+    color: black; 
+    padding: auto; 
+    border-style: groove; 
+    border-color: white;
+}
+.tortaIndexLeft{
+    @include tortasIndexStyle;
+    align-content: center;
+   
+}
+
+.tortaIndexRight{
+    @include tortasIndexStyle;
+    margin-bottom: 3rem;
+    
+}
+
+.imgIndex{
+    margin-bottom: 2rem;
+    display: flex;
+    border-radius: 1rem;
+}
+
+.backgroundsIndex2{
+    background-color: white;
+    color: black; 
+    width: 50%; 
+    padding: 0.2rem 0.2rem 0.2rem 0.2rem; 
+    border-style: groove; 
+    border-radius: 1rem;
+    border-color: grey;
+    margin: 3rem 0rem 3rem 0rem; 
+    font-size: 2rem; 
+    font-family:"Caveat";
+    text-align: center;
+    font-weight: 900;
+
+    .cajaTitulos{
+        font-family: "Caveat"; 
+        margin: 1rem 1rem 1rem 1rem; 
+        text-align: center; 
+        font-weight: bold; 
+        font-size: 2rem;
+        opacity: none;
+        animation: fadeIn;
+        animation-duration: 2s;
+    }
+
+    .cajaTexto{
+        margin: 0rem 1rem 1rem 1rem;
+        opacity: none;
+    }
+}
+
+@media(min-width:768px){
+           
+    .tortaIndexLeft{
+            margin-right: 20rem;
+            padding: auto; 
+    }
+    
+    .tortaIndexRight{
+            position: absolute;
+            height: 18rem;
+            width: 12rem; 
+            margin-top: 21rem;
+            margin-left: 20rem;     
+    }
+    
+    .backgroundsImage {
+            padding: 2rem 2rem 2rem 2rem; 
+    }
+
+    .mensaje{
+           height: 20rem;
+           width: 30rem;
+    }
+}    
+
+@media(min-width:1024px){
+
+    .tortaIndexLeft{
+            margin: 30rem 55rem 0rem 0rem;
+            position: absolute; 
+            top: 0px; 
+          
+    }
+
+    .tortaIndexRight{
+            margin: 30rem 0rem 50rem 55rem;
+            position: absolute; 
+            top: 0px; 
+         
+    }
+
+    .backgroundsText{
+            width: 30rem; 
+            padding: 1rem 1rem 1rem 1rem; 
+    }
+
+    .backgroundsImage {
+            padding: 2rem 2rem 2rem 2rem; 
+            font-size: 1.5rem;
+    }
+
+}
