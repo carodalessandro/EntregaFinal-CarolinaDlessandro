@@ -1,3 +1,5 @@
+@import "variables";
+
 .tableTortas{
         display: flex;
         flex-direction: row;
@@ -22,9 +24,9 @@
         background-color:none;
         background-position: center;
         background-repeat: round;
-        color: black; 
+        color: $colorBlack; 
         padding: 3rem 3rem 5rem 3rem; 
-        border-style: groove; 
+        border-style: $bordeBoton; 
         border-color: white; 
         text-align: start;
         line-height: 2rem;
@@ -33,8 +35,8 @@
 
 .backgroundsStyle{
         width: 100%;
-        border-style: groove; 
-        color: black; 
+        border-style: $bordeBoton; 
+        color: $colorBlack; 
         border-radius: 1rem;
         margin-bottom: 2rem; 
         text-align: center; 
@@ -55,21 +57,22 @@
 .backgroundstorta {
         @extend.backgroundsStyle;
         background-color: none; 
-        height: 14rem; 
-        font-size: 1.7rem;
+        height: 10rem; 
+        font-size: 1.4rem;
 }
 
 @media(min-width:768px){
 
         .tamañocarrousel{
-                width: 70%;
+                width: 30%;
         }
     }
 
 @media(min-width:1024px){
 
         .tamañocarrousel{
-                width: 30%;
+                width: 70%;
+               
         }
     
     }
