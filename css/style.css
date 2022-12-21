@@ -170,49 +170,62 @@ footer {
     font-size: 1.1rem;
   }
 }
-.tortaIndexLeft {
-  display: flex;
-  height: 18rem;
-  width: 12rem;
+.tortasIndexStyle {
+  height: 40rem;
+  width: 30rem;
   background: white;
-  color: black;
-  padding: auto;
   border-style: groove;
   border-color: white;
-  align-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
 }
 
-.tortaIndexRight {
-  display: flex;
-  height: 18rem;
-  width: 12rem;
-  background: white;
-  color: black;
-  padding: auto;
+.imgIndexRight {
+  height: 20rem;
+  width: 24rem;
+  margin: 1rem 0.3rem 1rem 0.3rem;
   border-style: groove;
   border-color: white;
-  margin-bottom: 3rem;
+  background-repeat: round;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  background-image: url(../img/minicake2.jpg);
+}
+
+.imgIndexLeft {
+  height: 20rem;
+  width: 24rem;
+  margin: 1rem 0.3rem 1rem 0.3rem;
+  border-style: groove;
+  border-color: white;
+  background-repeat: round;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  background-image: url(../img/Box1.jpg);
+}
+
+.backgroundIndex {
+  width: 20%;
 }
 
 .imgIndex {
   margin-bottom: 2rem;
   display: flex;
   border-radius: 1rem;
+  justify-items: center;
 }
 
 .backgroundsIndex2 {
-  background-color: white;
-  color: black;
-  width: 75%;
+  background-color: rgb(255, 227, 231);
+  height: 40rem;
+  width: 25rem;
+  align-content: stretch;
   padding: 0.2rem 0.2rem 0.2rem 0.2rem;
-  border-style: groove;
-  border-radius: 1rem;
-  border-color: grey;
-  margin: 3rem 0rem 3rem 0rem;
-  font-size: 2rem;
-  font-family: "Caveat";
-  text-align: center;
-  font-weight: 900;
+  margin: 0rem 0.52rem 2rem 0.52rem;
 }
 .backgroundsIndex2 .cajaTitulos {
   font-family: "Caveat";
@@ -229,17 +242,26 @@ footer {
   opacity: none;
 }
 
+.cajaIndex {
+  background-color: lightgrey;
+  height: 10rem;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  justify-content: justify;
+}
+
 @media (min-width: 768px) {
-  .tortaIndexLeft {
-    margin-right: 20rem;
-    padding: auto;
+  .imgIndexRight {
+    height: 30rem;
+    width: 36rem;
   }
-  .tortaIndexRight {
-    position: absolute;
-    height: 18rem;
-    width: 12rem;
-    margin-top: 3rem;
-    margin-left: 20rem;
+  .imgIndexLeft {
+    height: 30rem;
+    width: 36rem;
+  }
+  .tortasIndexStyle {
+    height: 30rem;
+    width: 20rem;
   }
   .backgroundsImage {
     padding: 2rem 2rem 2rem 2rem;
@@ -250,18 +272,27 @@ footer {
   }
 }
 @media (min-width: 1024px) {
-  .tortaIndexLeft {
-    margin: 10rem 54rem 0rem 0rem;
-    position: absolute;
-    top: 0px;
+  .imgIndexRight {
+    height: 32.5rem;
+    width: 38.1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+  }
+  .imgIndexLeft {
+    height: 32.5rem;
+    width: 38.1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .tortasIndexStyle {
+    margin-top: 1rem;
+    height: 40rem;
+    width: 30rem;
   }
   .backgroundsIndex2 {
-    width: 50%;
-  }
-  .tortaIndexRight {
-    margin: 10rem 0rem 50rem 54rem;
-    position: absolute;
-    top: 0px;
+    padding: 8rem 2rem 0.2rem 2rem;
+    margin-top: 1rem;
   }
   .backgroundsText {
     width: 30rem;
@@ -270,6 +301,11 @@ footer {
   .backgroundsImage {
     padding: 2rem 2rem 2rem 2rem;
     font-size: 1.5rem;
+  }
+  .cajaIndex {
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-bottom: 3rem;
   }
 }
 .tableTortas {
@@ -345,7 +381,7 @@ fieldset {
   background-color: none;
   background-position: center;
   background-repeat: repeat-y;
-  border-color: rgb(156, 86, 156);
+  border-color: fuchsia;
   padding: 2rem 0rem 2rem 0rem;
   text-transform: uppercase;
   font-size: 1.3rem;
@@ -353,7 +389,7 @@ fieldset {
   text-align: center;
   line-height: 1.9rem;
   align-items: center;
-  border-radius: 1rem;
+  border-radius: 0rem;
   display: grid;
   flex-wrap: wrap;
 }
@@ -368,38 +404,6 @@ fieldset textarea {
   padding: 4rem 4rem 4rem 4rem;
   opacity: 0.5;
   text-emphasis-color: black;
-}
-
-.btn {
-  position: relative;
-  font-family: "Caveat";
-  font-size: 1.5rem;
-  border-bottom-style: inset;
-  padding: 3px 3px 3px 3px;
-  border-color: fuchsia;
-  color: black;
-  margin-bottom: 3px;
-  border-radius: 2rem;
-  z-index: 1;
-  overflow: hidden;
-  transition: all 0.7s;
-}
-.btn:before {
-  content: " ";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 0%;
-  width: 190%;
-  background-color: rgb(156, 86, 156);
-  z-index: -1;
-  transition: all 0.7s;
-}
-.btn:hover:before {
-  height: 190%;
-}
-.btn:hover {
-  color: none;
 }
 
 .fontFrases {
@@ -526,7 +530,6 @@ body {
   display: flex;
   flex-wrap: wrap;
   font-family: "Montserrat", sans-serif;
-  background-image: url(../img/background4.jpg);
   background-position: center;
   background-size: cover;
 }
@@ -546,6 +549,36 @@ body section h1, body section h2 {
   opacity: none;
   animation: fadeIn;
   animation-duration: 2s;
+}
+
+.btn {
+  background-color: white;
+  position: relative;
+  font-size: 1.5rem;
+  padding: 3px 3px 3px 3px;
+  color: black;
+  margin-bottom: 3px;
+  z-index: 0;
+  overflow: hidden;
+  transition: all 0.7s;
+  border-radius: 0rem;
+}
+.btn:before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 0%;
+  width: 190%;
+  background-color: fuchsia;
+  z-index: -1;
+  transition: all 0.7s;
+}
+.btn:hover:before {
+  height: 190%;
+}
+.btn:hover {
+  color: none;
 }
 
 @media (min-width: 768px) {

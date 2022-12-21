@@ -12,7 +12,7 @@ fieldset {
     text-align: center; 
     line-height: 1.9rem;
     align-items: center;
-    border-radius: 1rem;
+    border-radius: 0rem;
     display: grid;
     flex-wrap: wrap;
 
@@ -31,41 +31,6 @@ fieldset {
         text-emphasis-color: black;
     }
 }
-
-.btn{
-    position: relative;
-    font-family:"Caveat";
-    font-size: 1.5rem;
-    border-bottom-style: inset; 
-    padding: 3px 3px 3px 3px;
-    border-color: $colorFuchsia;
-    color: $colorBlack;
-    margin-bottom: 3px;
-    border-radius: 2rem;
-    z-index: 1;
-    overflow: hidden;
-    transition: all 0.7s;
-
-    &:before{
-        content: " ";
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 0%;
-        width: 190%;
-        background-color: $hoverBoton;
-        z-index: -1;
-        transition: all 0.7s;
-    }
-    &:hover:before{
-        height: 190%;
-    }
-
-    &:hover{
-        color: none;
-    }
-}
-
 
 .fontFrases{
     width:auto ;

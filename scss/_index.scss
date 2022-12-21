@@ -1,46 +1,56 @@
 @import "variables";
 
-@mixin tortasIndexStyle{
-    display: flex;
-    height: 18rem;
-    width: 12rem;  
+.tortasIndexStyle{
+    height: 40rem;
+    width: 30rem;  
     background: white; 
-    color: $colorBlack; 
-    padding: auto; 
     border-style: $bordeBoton; 
     border-color: white;
-}
-.tortaIndexLeft{
-    @include tortasIndexStyle;
-    align-content: center;
-   
+    align-items: center;
+    margin-bottom: 2rem;
 }
 
-.tortaIndexRight{
-    @include tortasIndexStyle;
-    margin-bottom: 3rem;
-    
+@mixin imgIndex{
+        height: 20rem;
+        width: 24rem;
+        margin: 1rem 0.3rem 1rem 0.3rem;
+        border-style: $bordeBoton; 
+        border-color: white;
+        background-repeat: round;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+
+.imgIndexRight{
+    @include imgIndex;
+    background-image: url(../img/minicake2.jpg); 
 }
 
+.imgIndexLeft{
+    @include imgIndex;
+    background-image: url(../img/Box1.jpg); 
+}
+
+.backgroundIndex{
+    width: 20%;
+}
 .imgIndex{
     margin-bottom: 2rem;
     display: flex;
     border-radius: 1rem;
+    justify-items: center;
+
 }
 
 .backgroundsIndex2{
-    background-color: white;
-    color: $colorBlack; 
-    width:75%; 
+    background-color: $fondoBoxRosa;
+    height: 40rem;
+    width: 25rem;  
+    align-content: stretch;
     padding: 0.2rem 0.2rem 0.2rem 0.2rem; 
-    border-style: $bordeBoton; 
-    border-radius: 1rem;
-    border-color: grey;
-    margin: 3rem 0rem 3rem 0rem; 
-    font-size: 2rem; 
-    font-family:"Caveat";
-    text-align: center;
-    font-weight: 900;
+    margin: 0rem 0.52rem 2rem 0.52rem; 
 
     .cajaTitulos{
         font-family: "Caveat"; 
@@ -59,21 +69,35 @@
     }
 }
 
+.cajaIndex{
+    background-color: lightgrey;
+    height: 10rem;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    justify-content: justify;
+
+}
+
 @media(min-width:768px){
-           
-    .tortaIndexLeft{
-            margin-right: 20rem;
-            padding: auto; 
+
+    @mixin imgIndex{
+        height: 30rem;
+        width: 36rem;
     }
-    
-    .tortaIndexRight{
-            position: absolute;
-            height: 18rem;
-            width: 12rem; 
-            margin-top: 3rem;
-            margin-left: 20rem;     
+
+    .imgIndexRight{
+        @include imgIndex;
     }
-    
+
+    .imgIndexLeft{
+        @include imgIndex;
+    }
+
+    .tortasIndexStyle{
+        height: 30rem;
+        width: 20rem;  
+    }
+
     .backgroundsImage {
             padding: 2rem 2rem 2rem 2rem; 
     }
@@ -86,21 +110,32 @@
 
 @media(min-width:1024px){
 
-    .tortaIndexLeft{
-            margin: 10rem 54rem 0rem 0rem;
-            position: absolute; 
-            top: 0px; 
-          
-    }
-    .backgroundsIndex2{
-        width: 50%;
+    @mixin imgIndex{
+        height: 32.5rem;
+        width: 38.1rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
     }
 
-    .tortaIndexRight{
-            margin: 10rem 0rem 50rem 54rem;
-            position: absolute; 
-            top: 0px; 
-         
+    .imgIndexRight{
+        @include imgIndex;
+        margin-left: 2rem;
+    }
+
+    .imgIndexLeft{
+        @include imgIndex;
+    }
+
+    .tortasIndexStyle{
+        margin-top: 1rem;
+        height: 40rem;
+        width: 30rem;  
+    }
+
+    .backgroundsIndex2{
+        padding: 8rem 2rem 0.2rem 2rem;
+        margin-top: 1rem;
+
     }
 
     .backgroundsText{
@@ -111,6 +146,13 @@
     .backgroundsImage {
             padding: 2rem 2rem 2rem 2rem; 
             font-size: 1.5rem;
+    }
+
+    .cajaIndex{
+        margin-left: 5rem;
+        margin-right: 5rem;
+        margin-bottom: 3rem;
+    
     }
 
 }
