@@ -83,7 +83,7 @@ header {
   }
 }
 footer {
-  margin: auto;
+  margin: 2rem auto 0rem auto;
   padding: 0rem 0rem 0rem 0rem;
   background-color: black;
   position: relative;
@@ -183,7 +183,7 @@ footer {
 .imgIndexRight {
   height: 20rem;
   width: 24rem;
-  margin: 1rem 0.3rem 1rem 0.3rem;
+  margin: 1rem 0rem 1rem 0rem;
   border-style: groove;
   border-color: white;
   background-repeat: round;
@@ -197,7 +197,7 @@ footer {
 .imgIndexLeft {
   height: 20rem;
   width: 24rem;
-  margin: 1rem 0.3rem 1rem 0.3rem;
+  margin: 1rem 0rem 1rem 0rem;
   border-style: groove;
   border-color: white;
   background-repeat: round;
@@ -212,34 +212,18 @@ footer {
   width: 20%;
 }
 
-.imgIndex {
-  margin-bottom: 2rem;
-  display: flex;
-  border-radius: 1rem;
-  justify-items: center;
-}
-
 .backgroundsIndex2 {
   background-color: rgb(255, 227, 231);
-  height: 40rem;
-  width: 25rem;
   align-content: stretch;
   padding: 0.2rem 0.2rem 0.2rem 0.2rem;
-  margin: 0rem 0.52rem 2rem 0.52rem;
+  margin: 0rem 0rem 2rem 0rem;
 }
 .backgroundsIndex2 .cajaTitulos {
-  font-family: "Caveat";
   margin: 1rem 1rem 1rem 1rem;
   text-align: center;
-  font-weight: bold;
   font-size: 2rem;
-  opacity: none;
   animation: fadeIn;
   animation-duration: 2s;
-}
-.backgroundsIndex2 .cajaTexto {
-  margin: 0rem 1rem 1rem 1rem;
-  opacity: none;
 }
 
 .cajaIndex {
@@ -260,15 +244,15 @@ footer {
     width: 36rem;
   }
   .tortasIndexStyle {
-    height: 30rem;
+    height: 25rem;
     width: 20rem;
   }
-  .backgroundsImage {
-    padding: 2rem 2rem 2rem 2rem;
+  .backgroundsIndex2 {
+    height: 25rem;
+    width: 13rem;
   }
-  .mensaje {
-    height: 20rem;
-    width: 30rem;
+  .backgroundsIndex2 .cajaTitulos {
+    font-size: 1.5rem;
   }
 }
 @media (min-width: 1024px) {
@@ -287,20 +271,19 @@ footer {
   }
   .tortasIndexStyle {
     margin-top: 1rem;
-    height: 40rem;
-    width: 30rem;
+    height: 32rem;
+    width: 22rem;
   }
   .backgroundsIndex2 {
-    padding: 8rem 2rem 0.2rem 2rem;
     margin-top: 1rem;
+    height: 32rem;
+    width: 17rem;
   }
-  .backgroundsText {
-    width: 30rem;
-    padding: 1rem 1rem 1rem 1rem;
+  .backgroundsIndex2 .cajaTitulos {
+    font-size: 1.8rem;
   }
-  .backgroundsImage {
-    padding: 2rem 2rem 2rem 2rem;
-    font-size: 1.5rem;
+  .backgroundsIndex2 .cajaTexto {
+    font-size: 1.7rem;
   }
   .cajaIndex {
     margin-left: 5rem;
@@ -308,194 +291,90 @@ footer {
     margin-bottom: 3rem;
   }
 }
-.tableTortas {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+.BoxQS {
+  width: 100%;
+  text-align: center;
+  background-color: rgb(255, 227, 231);
+  align-content: stretch;
+  padding: 0.2rem 0.2rem 0.2rem 0.2rem;
+  margin: 0rem 0rem 2rem 0rem;
 }
-
-.cajaTitulos {
-  font-family: "Caveat";
+.BoxQS .cajaTitulos {
   margin: 1rem 1rem 1rem 1rem;
   text-align: center;
-  font-weight: bold;
   font-size: 2rem;
-  opacity: none;
   animation: fadeIn;
   animation-duration: 2s;
 }
-
-.tamañoImagenesMensaje {
-  width: 100%;
-  margin-bottom: 1rem;
-  background-color: none;
-  background-position: center;
-  background-repeat: round;
-  color: black;
-  padding: 3rem 3rem 5rem 3rem;
-  border-style: groove;
-  border-color: white;
-  text-align: start;
-  line-height: 2rem;
-  border-radius: 1rem;
+.BoxQS .imgQS {
+  width: 20rem;
+  margin: 5rem 0rem 5rem 0rem;
+}
+.BoxQS .cajaTexto {
+  font-size: 1.3rem;
+  width: 70%;
+  margin: 2rem 1rem 1rem 1rem;
+  opacity: none;
 }
 
-.backgroundsStyle, .backgroundstorta, .backgrounds {
-  width: 100%;
-  border-style: groove;
-  color: black;
-  border-radius: 1rem;
-  margin-bottom: 2rem;
-  text-align: center;
-  position: relative;
-  animation-name: text;
-}
-
-.backgrounds {
-  background-color: white;
-  height: 5rem;
-  text-transform: uppercase;
-  font-size: 1.5rem;
-  font-family: "Caveat";
-  font-weight: bold;
-}
-
-.backgroundstorta {
-  background-color: none;
-  height: 10rem;
-  font-size: 1.4rem;
-}
-
-@media (min-width: 768px) {
-  .tamañocarrousel {
-    width: 70%;
-  }
-}
-@media (min-width: 1024px) {
-  .tamañocarrousel {
-    width: 50%;
-  }
-}
 fieldset {
   background-color: none;
   background-position: center;
   background-repeat: repeat-y;
   border-color: fuchsia;
-  padding: 2rem 0rem 2rem 0rem;
   text-transform: uppercase;
   font-size: 1.3rem;
-  font-family: "Caveat";
   text-align: center;
   line-height: 1.9rem;
   align-items: center;
   border-radius: 0rem;
   display: grid;
   flex-wrap: wrap;
+  margin-bottom: 0.5rem;
+  padding: 2rem 2rem 2rem 2rem;
 }
 fieldset input {
-  font-family: "Montserrat";
+  margin-bottom: 0.5rem;
   font-size: large;
-  border-radius: 2rem;
   border-color: fuchsia;
   opacity: 0.5;
+  line-height: 2.5rem;
 }
 fieldset textarea {
-  padding: 4rem 4rem 4rem 4rem;
+  margin-top: 0.5rem;
   opacity: 0.5;
   text-emphasis-color: black;
 }
 
-.fontFrases {
-  width: auto;
-  font-family: "Caveat";
-  text-align: center;
-  font-size: 1.5rem;
-  margin: 0rem 1rem 1rem 1rem;
-  font-weight: 900;
+.mensaje {
+  height: 10rem;
+  width: 15rem;
 }
 
-@media (min-width: 1024px) {
-  .btn {
-    font-size: 1.7rem;
-    padding: 0.6rem 0.6rem 0.6rem 0.6rem;
-    margin-top: 1rem;
-    border-radius: 2rem;
+@media (min-width: 768px) {
+  .mensaje {
+    height: 20rem;
+    width: 30rem;
   }
 }
-.ordenImagenes {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 0rem 1rem 0rem 1rem;
-}
-
-.backgroundsOptions {
-  color: black;
-  padding: 0.2rem 0.2rem 0.2rem 0.2rem;
-  border-style: groove;
-  border-radius: 1rem;
-  border-color: grey;
-  margin: 3rem 0rem 3rem 0rem;
-  font-size: 2rem;
-  font-family: "Caveat";
-  text-align: center;
-  font-weight: 900;
-  background-color: none;
-  width: 50%;
-  justify-content: space-around;
-  align-items: center;
-  z-index: 0;
-}
-.backgroundsOptions .backgroundsBox {
-  padding: 0.2rem 0.2rem 0.2rem 0.2rem;
-  border-style: groove;
-  border-radius: 1rem;
-  align-items: center;
-}
-
-.backgroundsText {
-  color: black;
-  padding: 0.2rem 0.2rem 0.2rem 0.2rem;
-  border-style: groove;
-  border-radius: 1rem;
-  border-color: grey;
-  margin: 3rem 0rem 3rem 0rem;
-  font-size: 2rem;
-  font-family: "Caveat";
-  text-align: center;
-  font-weight: 900;
-  background-color: white;
-  width: 100%;
-}
-
-.tamañoImagenes--tortas {
-  display: flex;
-  margin-bottom: 2rem;
-  width: 25rem;
-  height: 25rem;
-  background-color: none;
-  background-position: center;
-  background-repeat: no-repeat;
-  color: black;
+.tamañoImagenesMensaje {
+  width: 30rem;
+  margin-bottom: 1rem;
   padding: 2rem 2rem 2rem 2rem;
   border-style: groove;
-  border-color: white;
-  border-radius: 1rem;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  line-height: 2rem;
+  display: flex;
+  justify-items: stretch;
 }
 
-@media (min-width: 1024px) {
-  .backgroundsOptions {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-  .backgroundsOptions .backgroundsBox {
+@media (min-width: 768px) {
+  .tamañocarrousel {
     width: 50%;
+  }
+}
+@media (min-width: 1024px) {
+  .tamañocarrousel {
+    width: 33%;
   }
 }
 * {
@@ -541,10 +420,8 @@ body section {
   align-items: center;
 }
 body section h1, body section h2 {
-  font-family: "Caveat";
   margin: 1rem 1rem 1rem 1rem;
   text-align: center;
-  font-weight: bold;
   font-size: 2rem;
   opacity: none;
   animation: fadeIn;
@@ -581,9 +458,39 @@ body section h1, body section h2 {
   color: none;
 }
 
+.borde {
+  background-color: lightgrey;
+}
+
+.backgrounds {
+  width: 100%;
+  background-color: lightgrey;
+  margin-bottom: 2rem;
+  text-align: center;
+  animation-name: text;
+  padding: 1rem 0.5rem 1rem 0.5rem;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+
+.marginPedidos {
+  margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 @media (min-width: 768px) {
   .container {
     width: 85%;
+  }
+}
+@media (min-width: 1024px) {
+  .btn {
+    font-size: 1.7rem;
+    padding: 0.6rem 0.6rem 0.6rem 0.6rem;
+    margin-top: 1rem;
   }
 }
 

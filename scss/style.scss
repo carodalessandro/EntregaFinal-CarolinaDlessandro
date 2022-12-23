@@ -1,9 +1,9 @@
 @import "header";
 @import "footer";
 @import "index";
-@import "tortas";
+@import "quienesSomos";
 @import "escribinos";
-@import "cupminbox";
+@import "nuestrosProductos";
 @import "variables";
 
 *{
@@ -50,10 +50,8 @@ body{
         align-items: center;
     
         h1, h2{
-            font-family: "Caveat"; 
             margin: 1rem 1rem 1rem 1rem; 
             text-align: center; 
-            font-weight: bold; 
             font-size: 2rem;
             opacity: none;
             animation: fadeIn;
@@ -95,8 +93,42 @@ body{
     }
 }
 
+.borde{
+    background-color: $colorGrey;
+}
+
+.backgrounds{
+    width: 100%;
+    background-color: $colorGrey;
+    margin-bottom: 2rem; 
+    text-align: center; 
+    animation-name: text;
+    padding: 1rem 0.5rem 1rem 0.5rem;
+    text-transform: uppercase; 
+    font-size: 1.5rem;
+}
+
+.marginPedidos{
+    margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 @media(min-width:768px){
     .container{
             width: 85%;
     }
+}
+
+
+@media(min-width:1024px){
+
+    .btn{
+            font-size: 1.7rem;
+            padding: 0.6rem 0.6rem 0.6rem 0.6rem;
+            margin-top: 1rem;
+    }
+
 }
